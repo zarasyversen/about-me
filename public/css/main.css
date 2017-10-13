@@ -60,14 +60,15 @@ p {
   height: 60px;
   border-radius: 5px;
   z-index: 2; }
+  @media (min-width: 768px) {
+    .hamburger {
+      display: none; } }
 
 .line {
   background-color: #fff;
   width: 40px;
   height: 5px;
   margin: 11px auto;
-  -webkit-transition: 0.5s ease-in;
-  -o-transition: 0.5s ease-in;
   transition: 0.5s ease-in; }
 
 .open .line:nth-child(1) {
