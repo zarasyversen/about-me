@@ -5,6 +5,40 @@
         <link rel="stylesheet" type="text/css" href="public/css/main.css">
     </head>
     <body>
-        <h1>Hello World</h1>
+    <a href="#" id="main-nav-trigger">
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div> <!-- end hamburger -->
+    </a>
+    <nav class="main-nav">
+        <ul class="nav__list" id="nav__list">
+            <li class="nav__item">
+                <a href="#" class="nav-title">Projects</a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav-title">Blog</a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav-title">About</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <script>
+        // Menu
+        var navBtn = document.querySelector('.hamburger');
+        var navMain = document.querySelector('#nav__list');
+        function openNav(){
+            //animate hamburger
+            navBtn.classList.toggle('open');
+
+            //open nav by adding class
+            navMain.classList.toggle('active');
+        }
+        navBtn.addEventListener('click', openNav);
+    </script>
     </body>
 </html>
