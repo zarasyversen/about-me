@@ -91,3 +91,14 @@ h1 {
   -ms-transform: translateY(-12px) rotate(-45deg);
   -o-transform: translateY(-12px) rotate(-45deg);
   transform: translateY(-12px) rotate(-45deg); }
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: 10% auto 10%;
+  grid-gap: 1em;
+  padding: 10px; }
+  .section .item {
+    padding: 20px;
+    border: 1px #d2dff4 solid;
+    background-color: #f7f7f7; }

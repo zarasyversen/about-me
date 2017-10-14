@@ -1,0 +1,14 @@
+.section{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows:10% auto 10%;
+  grid-gap:1em;
+  padding:10px;
+
+  .item {
+    padding:20px;
+    border:1px #d2dff4 solid;
+    background-color: #f7f7f7;
+  }
+
+}
