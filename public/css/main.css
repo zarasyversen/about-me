@@ -93,12 +93,22 @@ h1 {
   transform: translateY(-12px) rotate(-45deg); }
 
 .section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-template-rows: 10% auto 10%;
-  grid-gap: 1em;
-  padding: 10px; }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
   .section .item {
+    margin: 1em;
     padding: 20px;
     border: 1px #d2dff4 solid;
     background-color: #f7f7f7; }
+  .section .project__item {
+    width: 300px; }
+  @supports (display: grid) {
+    .section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      grid-template-rows: 20% auto 20%;
+      grid-gap: 1em; }
+      .section .project__item {
+        width: auto; } }
