@@ -1,38 +1,39 @@
 .main-nav {
   position:fixed;
   top:0;
-  width: 100%;
-  font-family: 'Quicksand', sans-serif;
+  width:100%;
   background-color:$menu-color;
   min-height:60px;
-
-  a {
-    color:$link-color;
-    text-decoration:none;
-  }
 }
 
 .nav__list{
   width:100%;
   padding:0;
   margin:0;
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  list-style: none;
+  text-align: center;
+
 }
 
 .nav__item {
-  display:inline-block;
   position: relative;
-  width:120px;
+  min-width:100px;
 }
 
-//set height on hover
-.nav__item:hover .main-sub-nav{
-  height: 150px;
-}
 
 .nav-title {
   display:block;
   padding:20px 10px;
-  text-align: center;
+  transition: 1s;
+  color:$link-color;
+  text-decoration:none;
+
+  &:hover{
+    color:#33cccc;
+  }
 }
 
 @media(max-width:$breakpoint-medium){
@@ -40,7 +41,8 @@
   .nav__list{
     margin-top:-100%;
     transition: .5s;
-
+    flex-direction: column;
+    align-items: center;
 
     &.active{
       margin-top:60px;
@@ -48,15 +50,10 @@
   }
 
   .nav__item{
-    width:100%;
-    &:hover{
-      background: none;
-    }
+    width:80%;
   }
 
   .nav-title{
     text-align: left;
-    border-bottom:1px inset darken($submenu-color, 5%);
-
   }
 }

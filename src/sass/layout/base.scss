@@ -1,0 +1,11 @@
+body {
+  margin:0;
+  font-family:$base-font;
+}
+
+.main{
+  background-color:#33cccc;
+  background-image:linear-gradient(180deg, #8fd3f4 0%, #33cccc 100%);
+  min-height: 100vh;
+  padding-top:60px;
+}
