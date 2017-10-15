@@ -2,3 +2,6 @@
 gulpfile.js
 package.json
 .idea/
+blog/_site
+blog/.sass-cache
+blog/.jekyll-metadata
