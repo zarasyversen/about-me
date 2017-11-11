@@ -1,12 +1,12 @@
 .site-header{
   border: none;
-  background-color:$menu-color;
+  background-color:$color--dark;
 
   .site-title {
-    color:white;
+    color:$text-color--white;
 
     &:hover {
-      @include text-gradient($color--pink, $color-theme-2);
+      @include text-gradient(180deg, $color--fuschia, $color-theme-2);
     }
   }
 
@@ -18,11 +18,11 @@
 
 .site-nav {
   .page-link {
-    color:white;
-    padding:10px;
+    color: $text-color--white;
+    padding: $padding-medium/2;
 
     &:hover{
-      @include text-gradient($color--pink, $color-theme-2);
+      @include text-gradient(180deg, $color--pink, $color-theme-2);
     }
   }
 }

@@ -3,8 +3,7 @@
   background-image: linear-gradient(180deg, $color-theme-1 0%, $color-theme-2 100%);
 
   .wrapper {
-    background-color:white;
-    padding:20px;
-    box-sizing: border-box;
+    background-color: $color--white;
+    padding: $padding-medium;
   }
 }
