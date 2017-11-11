@@ -1,5 +1,29 @@
-$menu-color: #333;
 .site-header{
   border: none;
   background-color:$menu-color;
+
+  .site-title {
+    color:white;
+
+    &:hover {
+      @include text-gradient($color--pink, $color-theme-2);
+    }
+  }
+
+  a {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
 }
+
+.site-nav {
+  .page-link {
+    color:white;
+    padding:10px;
+
+    &:hover{
+      @include text-gradient($color--pink, $color-theme-2);
+    }
+  }
+}
+
