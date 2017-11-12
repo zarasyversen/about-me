@@ -21,6 +21,10 @@
     color: $text-color--white;
     padding: $padding-medium/2;
 
+    @media(max-width: $ipad){
+      color: $text-color--dark;
+    }
+
     &:hover{
       @include text-gradient(180deg, $color--pink, $color-theme-2);
     }
