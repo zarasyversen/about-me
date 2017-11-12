@@ -27,7 +27,27 @@ footer {
   background-blend-mode: screen;
 }
 
-.social-links{
+.footer-links {
+  padding-right: $padding-large;
+
+  &:last-child{
+    padding-right:0;
+  }
+
+}
+
+.footer__title {
+  margin:0 $margin-base;
+  padding: $padding-medium/2 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: $font-size--base;
+  font-weight: bold;
+  @include text-gradient(-90deg, $color-theme-2, $color--pink);
+}
+
+
+.footer-links__list{
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -35,6 +55,7 @@ footer {
 
   margin:0;
   list-style: none;
+
 }
 
 .social-links__item {
@@ -44,7 +65,7 @@ footer {
   align-items: center;
 
   margin:0 $margin-base;
-  padding: $padding-medium/2;
+  padding: $padding-small 0;
 
   i {
     font-size: $font-size--icon;

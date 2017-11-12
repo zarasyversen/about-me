@@ -3,14 +3,29 @@
     <div class="description">
         <p>{{ site.description }}</p>
     </div>
-    <ul class="social-links">
-        <li class="social-links__item twitter">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            <a aria-label="twitter account" href="https://twitter.com/{{ site.twitter_username }}" target="_blank">{{ site.twitter_username }}</a>
-        </li>
-        <li class="social-links__item github">
-            <i class="fa fa-github" aria-hidden="true"></i>
-            <a aria-label="github account" href="https://github.com/{{ site.github_username }}" target="_blank">{{ site.github_username }}</a>
-        </li>
-    </ul>
+    <div class="footer-links">
+        <h3 class="footer__title">{{ site.data.linklist.docs_list_title }}</h3>
+        <ul class="footer-links__list">
+            {% for item in site.data.linklist.docs %}
+            <li class="social-links__item"><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="footer-links">
+        <h3 class="footer__title">Social</h3>
+        <ul class="footer-links__list social-links">
+            <li class="social-links__title"></li>
+
+            <li class="social-links__item twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <a aria-label="twitter account" href="https://twitter.com/{{ site.twitter_username }}" target="_blank">{{ site.twitter_username }}</a>
+            </li>
+            <li class="social-links__item github">
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <a aria-label="github account" href="https://github.com/{{ site.github_username }}" target="_blank">{{ site.github_username }}</a>
+            </li>
+        </ul>
+    </div>
+
+
 </footer>
