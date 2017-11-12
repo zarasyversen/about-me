@@ -17,7 +17,8 @@ footer {
 }
 
 .profile-picture {
-  width: 120px;
+  width: $profile-picture-dim;
+  height: $profile-picture-dim;
   border-radius: 5px;
   background-image: url('../images/zara.jpg');
   background-image: url('../images/zara.jpg'), linear-gradient(60deg, $color-theme-2 25%, $color--fuschia 75%,  $color--light-grey 100%);

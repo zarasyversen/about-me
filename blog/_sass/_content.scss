@@ -1,9 +1,16 @@
 .page-content{
-  background: #8fd3f4;
-  background-image: linear-gradient(180deg, $color-theme-1 0%, $color-theme-2 100%);
 
   .wrapper {
     background-color: $color--white;
     padding: $padding-medium;
+  }
+
+
+  .page-heading, .post-title {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: $font-size--h1;
+    border-bottom: 4px solid $color--fuschia;
+    line-height:  27px;
   }
 }
