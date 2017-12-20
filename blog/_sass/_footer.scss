@@ -1,0 +1,84 @@
+footer {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  background-color: $color--dark;
+  color: $text-color--white;
+
+  padding:$padding-base;
+
+  .description {
+    max-width:500px;
+    padding: $padding-medium;
+    font-size: $font-size--small;
+  }
+}
+
+.profile-picture {
+  width: $profile-picture-dim;
+  height: $profile-picture-dim;
+  border-radius: 5px;
+  background-image: url('../images/zara.jpg');
+  background-image: url('../images/zara.jpg'), linear-gradient(60deg, $color-theme-2 25%, $color--fuschia 75%,  $color--light-grey 100%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-blend-mode: screen;
+}
+
+.footer-links {
+  padding-right: $padding-large;
+
+  &:last-child{
+    padding-right:0;
+  }
+
+}
+
+.footer__title {
+  margin:0 $margin-base;
+  padding: $padding-medium/2 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: $font-size--base;
+  font-weight: bold;
+  @include text-gradient(-90deg, $color-theme-2, $color--pink);
+}
+
+
+.footer-links__list{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+
+  margin:0;
+  list-style: none;
+
+}
+
+.social-links__item {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin:0 $margin-base;
+  padding: $padding-small 0;
+
+  i {
+    font-size: $font-size--icon;
+    margin-right: $margin-base;
+
+  }
+
+  a {
+    color: $text-color--white;
+
+    &:hover {
+      @include text-gradient(-180deg, $color-theme-1, $color-theme-2);
+    }
+  }
+}
+
