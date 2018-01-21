@@ -7,7 +7,7 @@ footer {
   background-color: $color--dark;
   color: $text-color--white;
 
-  padding:$padding-base;
+  padding: $padding-medium $padding-base;
 
   .description {
     max-width:500px;
@@ -34,6 +34,11 @@ footer {
     padding-right:0;
   }
 
+  @media(max-width:$ipad){
+    width: 100%;
+    text-align: center;
+  }
+
 }
 
 .footer__title {
@@ -56,6 +61,9 @@ footer {
   margin:0;
   list-style: none;
 
+  @media(max-width:$ipad){
+    align-items: center;
+  }
 }
 
 .social-links__item {
