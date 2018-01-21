@@ -6,7 +6,18 @@ html {
   box-sizing: inherit;
 }
 
-.body{
+body{
   font-family: $base-font;
+  background-color: $color--dark;
+}
 
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a,
+a:visited {
+  color: $text-color--dark;
 }

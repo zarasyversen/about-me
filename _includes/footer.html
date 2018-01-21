@@ -4,14 +4,6 @@
         <p>{{ site.description }}</p>
     </div>
     <div class="footer-links">
-        <h3 class="footer__title">{{ site.data.linklist.docs_list_title }}</h3>
-        <ul class="footer-links__list">
-            {% for item in site.data.linklist.docs %}
-            <li class="social-links__item"><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
-            {% endfor %}
-        </ul>
-    </div>
-    <div class="footer-links">
         <h3 class="footer__title">Social</h3>
         <ul class="footer-links__list social-links">
             <li class="social-links__title"></li>
@@ -26,6 +18,4 @@
             </li>
         </ul>
     </div>
-
-
 </footer>
